@@ -6,6 +6,7 @@ pipeline {
         stage('b') {
           steps {
             echo 'kaishi'
+            sh 'df -h'
           }
         }
         stage('t') {
@@ -15,7 +16,7 @@ pipeline {
         }
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         echo 'rrr'
       }
