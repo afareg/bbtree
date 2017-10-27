@@ -12,6 +12,7 @@ pipeline {
           steps {
             echo 'kaishi'
             sh 'df -h'
+            sh 'ansible -v'
           }
         }
         stage('t') {
